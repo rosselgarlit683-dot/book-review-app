@@ -104,7 +104,7 @@ app.delete('/books/review/:isbn', (req, res) => {
 });
 
 
-app.listen(PORT, () => console.log(`✅ Server running on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
 
 
 app.get("/async/books", async (req, res) => {
@@ -178,3 +178,4 @@ app.get("/promise/books/title/:title", (req, res) => {
     .then((result) => res.json(result))
     .catch((err) => res.status(404).json({ message: err }));
 });
+
